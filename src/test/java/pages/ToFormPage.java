@@ -19,4 +19,19 @@ public class ToFormPage {
 
     @FindBy(xpath = "(//*[@class='form-control'])[5]")
     public WebElement yilDropdownElementi;
+
+    @FindBy(xpath = "//*[@for='gridCheck5']")
+    public WebElement sirtAgrisiYaziElementi;
+
+    @FindBy(id = "gridCheck5")
+    public WebElement sirtAgrisiCheckboxElementi;
+
+    @FindBy(id = "gridCheck4")
+    public WebElement carpintiCheckboxElementi;
+
+    @FindBy(id = "hastalikCheck2")
+    public WebElement sekerCheckboxElementi;
+
+    @FindBy(id = "hastalikCheck7")
+    public WebElement epilepsiCheckboxElementi;
 }
