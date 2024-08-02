@@ -52,6 +52,15 @@ public class TestOtomasyonuPage {
     @FindBy(xpath = "(//*[text()='Logout'])[2]")
     public WebElement logoutButonu;
 
+    @FindBy(xpath = "(//*[@class='cart-count basket-count'])[1]")
+    public WebElement yourCartLinki;
+
+    @FindBy(xpath = "//button[@class='add-to-cart']")
+    public WebElement urunSayfasiAddToCartButonu;
+
+    @FindBy(xpath = "//*[@*='product-title text-center']")
+    public WebElement sepettekiUrunIsimElementi;
+
 
 
 
