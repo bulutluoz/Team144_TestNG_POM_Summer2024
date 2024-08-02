@@ -9,6 +9,18 @@ import utilities.Driver;
 
 public class C04_MultipleAssertion {
 
+    /*
+        TestNG'deki Assert class'indan kullanilan
+        assertion method'lari JUnit'deki Assertions gibi
+        ilk failed olan Assertion'da kodun calismasini durdurur
+        kodun geriye kalaninda hata olup olmadigi bilemeyiz
+
+        kodun geriye kalanini kontrol etmedigi icin,
+        bulunan hata duzeltiltikdikten sonra
+        test method'u calistirildiginda
+        testin PASSED olacagini garanti edemeyiz
+     */
+
     @Test
     public void aramaTesti(){
 
@@ -16,7 +28,7 @@ public class C04_MultipleAssertion {
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));
 
         // url'in "testotomasyonu" icerdigini test edin
-        String expectedUrlIcerik = "testotomasyonuTTT";
+        String expectedUrlIcerik = "testotomasyonu";
         String actualUrl = Driver.getDriver().getCurrentUrl();
 
         Assert.assertTrue(actualUrl.contains(expectedUrlIcerik));
@@ -29,7 +41,7 @@ public class C04_MultipleAssertion {
 
         // bulunan urun sayisinin 3'den fazla oldugunu test edin
 
-        int expectedMinUrunSayisi = 30;
+        int expectedMinUrunSayisi = 3;
         int actualBulunanUrunSayisi = testOtomasyonuPage.bulunanUrunElementleriList
                                                         .size();
 
@@ -48,7 +60,7 @@ public class C04_MultipleAssertion {
                                                     .toLowerCase();
         String expectedisimIcerik = ConfigReader.getProperty("toAranacakKelime");
 
-        Assert.assertTrue(actualUrunIsmi.contains("Ali"));
+        Assert.assertTrue(actualUrunIsmi.contains(expectedisimIcerik));
 
         Driver.quitDriver();
     }
