@@ -39,7 +39,7 @@ public class C01_NegativeLoginTesti {
         Driver.quitDriver();
     }
 
-    @Test
+    @Test(groups = {"regression","smoke"})
     public void gecersizEmailTesti(){
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
         Driver.getDriver().get(ConfigReader.getProperty("toUrl"));

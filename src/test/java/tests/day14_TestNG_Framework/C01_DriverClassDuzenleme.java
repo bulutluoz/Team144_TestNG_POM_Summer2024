@@ -6,7 +6,7 @@ import utilities.Driver;
 
 public class C01_DriverClassDuzenleme {
 
-    @Test
+    @Test(groups = {"regression", "E2E 2"})
     public void test01(){
 
         /*

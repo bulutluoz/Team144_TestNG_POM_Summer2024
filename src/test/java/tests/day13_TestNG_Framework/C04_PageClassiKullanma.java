@@ -10,7 +10,7 @@ public class C04_PageClassiKullanma {
 
 
 
-    @Test
+    @Test(groups = {"smoke","E2E 1"})
     public void test01(){
 
         // testotomasyonu anasayfaya gidin

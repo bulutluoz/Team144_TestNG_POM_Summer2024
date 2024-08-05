@@ -9,7 +9,7 @@ import utilities.ReusableMethods;
 
 public class C05_FormDoldurma {
 
-    @Test
+    @Test (groups = {"smoke","E2E 1"})
     public void test01(){
 
         //1 - https://testotomasyonu.com/form adresine gidin

@@ -8,7 +8,7 @@ import utilities.Driver;
 
 public class C03_FacebookTest {
 
-    @Test
+    @Test(groups = "regression")
     public void negatifLoginTesti(){
 
         //1 - https://www.facebook.com/ adresine gidin
