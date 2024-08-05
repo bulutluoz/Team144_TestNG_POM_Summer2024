@@ -60,7 +60,6 @@ public class C01_NegativeLoginTesti {
 
     }
 
-
     @Test
     public void gecersizEmailGecersizPasswordTesti(){
         // 1- https://www.testotomasyonu.com/ anasayfasina gidin
